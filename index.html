@@ -1,0 +1,313 @@
+<style type="text/css">  
+  @font-face {
+    font-family: "My Custom Font";
+    src: url(https://fonts.googleapis.com/css?family=Rubik+Scribble);
+  }
+
+  * {
+   font-family:  "My Custom Font";
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    margin: 0; /*keeps border touching the edge*/
+    padding: 0; /*keeps border touching the edge*/
+    
+    opacity: 0; /*fade in effect*/
+    
+    transition: opacity 3s;
+    -webkit-transition: opacity 3s; /* Safari */
+  }
+  
+  .arrow {
+    border: solid white;
+    border-width: 0 5px 5px 0;
+    padding: 15px;
+
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+
+    animation: fadeIn 0.75s infinite alternate;
+
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+
+  }
+
+  .arrow_2 {
+    border: solid white;
+    border-width: 0 5px 5px 0;
+    padding: 15px;
+    
+    transform: rotate(225deg);
+    -webkit-transform: rotate(225deg);
+    
+    animation: fadeIn 0.75s infinite alternate;
+
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+
+  }
+  .content {
+    position: relative; /*keeps text inside of div*/
+  }
+
+  .content_1 {
+    position: relative; /*keeps text inside of div*/
+  }
+  
+  .content_2 {
+    position: relative; /*keeps text inside of div*/
+  }
+
+  .content_3 {
+    position: relative; /*keeps text inside of div*/
+  }
+
+  .footer {
+    position: relative; /*keeps text inside of div*/
+  }
+  
+  .background {
+    height: 100%;
+    width: 100%;
+    filter: blur(8px);
+
+    background-image: url("https://cdn.discordapp.com/attachments/972767864090140685/1189777660633690122/background_1.jpg?ex=659f65cb&is=658cf0cb&hm=133a46d4401c5c182138562c96c72e871f0e0646e920da7486b364950157cf96&");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 100%; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .background_1 {
+    width: 100%;
+    height: 100%; 
+
+    background-image: url("https://shadersmods.com/wp-content/uploads/2020/12/sildurs-shaders-vibrant-2.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 100%; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .background_2 {
+    width: 100%;
+    height: 100%;
+
+    background-image: url("https://w.wallhaven.cc/full/p9/wallhaven-p9y319.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 100%; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .background_3 {
+    width: 100%;
+    height: 100%; 
+
+    background-image: url("https://images5.alphacoders.com/113/1138899.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 100%; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .background_4 {
+    width: 100%;
+    height: 25%;
+      
+    background-image: url("https://staticg.sportskeeda.com/editor/2022/07/e819b-16584086962501-1920.jpg");
+    background-repeat: no-repeat;
+    background-size: 25%;
+    min-height: 270px; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .body_content {
+    position: absolute; /*keeps text inside of div*/
+    top: 50vh; /*keeps text in the middle of the page*/
+    left: 50vw; /*keeps text in the middle of the page*/
+    transform: translate(-50%, -50%); /*keeps text in the middle of the page*/
+    text-align: center;
+  }
+  
+  .main_text {
+    color: white;
+    font-size: 500%;
+
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid transparent; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 1px; /* Adjust as needed */
+    animation: 
+      typing 3s steps(42, end),
+      blink-caret 0.75s step-end 5s;
+  }
+
+  .sub_text {
+    color: white;
+    text-align: center;
+    font-size: 200%;
+
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid transparent; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 1px; /* Adjust as needed */
+    animation: 
+      typing 3s steps(58, end),
+      blink-caret 0.75s step-end 5s;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white; }
+  }
+
+  @keyframes fadeIn { 
+    from { opacity: 0; } 
+  }
+
+  .body_content_1 {
+    position: absolute; /*keeps text inside of div*/
+    top: 50vh; /*keeps text in the middle of the page*/
+    text-align: center;
+  }
+
+  .text_1_container {
+    float: left;
+    width: 50vw;
+    color: white;
+    horizontal-align: center;
+  }
+  
+  .text_1 {
+    font-size: 300%;
+  }
+  
+  .text_1_info {
+    font-size: 150%;
+  }
+  
+  .image_1 {
+    float: right; 
+    width: 50vw;
+    horizontal-align: center;
+  }
+</style>
+
+<html>
+  
+  <title> The Chang Cheng Party | CCP </title>
+  
+   <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="The Chang Cheng Party | CCP - Minecraft Faction">
+    <meta name="keywords" content="Chang Cheng Party, CCP, Minecraft Faction">
+    <meta name="author" content="UniCodetta">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head> 
+  
+  <body onload="document.body.style.opacity='1'">
+    
+      <div class="content" id="content">
+        <div class="background"></div>
+      
+        <div class="body_content" id="text_1">
+          <p class="main_text">The Chang Cheng Party | CCP</p>
+          <p class="sub_text"><i>❝长城 - The Prolonged Great Barrier❞</i></p>
+        </div>
+        
+        <a href="#content_1" style="text-decoration:none">
+          <div class="arrow"></div>
+        </a>
+        
+      </div>
+      
+    
+      <div class="content_1" id="content_1">
+        <div class="background_1"></div>
+        
+        <div class="body_content_1">
+          <div class="text_1_container">
+            <p class="text_1">About Us</p>
+            <p class="text_1_info">Some random piece of text</p>
+          </div>
+          <div class="image_1">
+            <!-- <img src="https://media.discordapp.net/attachments/972767864090140685/1189819865624744077/v7sbbtatgbu41.png?ex=659f8d19&is=658d1819&hm=aa5ea381333b9c343fbb40e7efeac86947652a76bf25b6e6ab4cc3d5beca9eb9&=&format=webp&quality=lossless&width=814&height=458"> -->
+          </div>
+        </div>
+
+        <a href="#content_2" style="text-decoration:none">
+          <div class="arrow"></div>
+        </a>
+        
+      </div>
+
+      <div class="content_2" id="content_2">
+        <div class="background_2"></div>
+
+        <a href="#content_3" style="text-decoration:none">
+          <div class="arrow"></div>
+        </a>
+        
+      </div>
+
+      <div class="content_3" id="content_3">
+        <div class="background_3"></div>
+
+        <a href="#footer" style="text-decoration:none">
+          <div class="arrow"></div>
+        </a>
+        
+      </div>
+
+      <div class="footer" id="footer">
+        <div class="background_4"></div>
+
+        <a href="#content" style="text-decoration:none">
+          <div class="arrow_2"></div>
+        </a>
+        
+      </div>
+    </div>
+    
+  </body>
+</html>
+
+<script>
+</script>
